@@ -1,0 +1,208 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(font/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+.MainPage {
+  width: 100%;
+  height: 500vh;
+}
+.MainPage .MainContent {
+  background: rgb(96, 195, 251);
+  background: linear-gradient(330deg, rgba(96, 195, 251, 0) -10%, rgb(5, 35, 51) 100%), url(img/crystal-kwok-mhUsz2ezlXQ-unsplash.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
+}
+.MainPage .header {
+  position: fixed;
+  z-index: 2;
+  padding: 30px;
+  width: 100%;
+  margin-left: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+.MainPage .header .logo img {
+  width: 200px;
+  height: auto;
+}
+.MainPage .header .decider {
+  height: 70px;
+  margin-left: 150px;
+  background-color: white;
+  width: 0px;
+  border: solid 2px white;
+}
+.MainPage .header .TextBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 24px;
+}
+.MainPage .header .TextBlock p {
+  margin-left: 100px;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.MainPage .header .TextBlock p:hover {
+  color: #d1d1d1;
+}
+.MainPage .header .TextBlock .sign {
+  margin-left: 100px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 4px 44px;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.MainPage .header .TextBlock .sign:hover {
+  background-color: #d1d1d1;
+}
+.MainPage .header .TextBlock .sign p {
+  color: black;
+  margin: 0;
+}
+.MainPage .animation {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 60%;
+}
+.MainPage .animation img {
+  height: 800px;
+}
+.MainPage .Meeting {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  color: white;
+  left: 150px;
+}
+.MainPage .Meeting .TextBlock {
+  width: 900px;
+}
+.MainPage .Meeting .TextBlock h1 {
+  font-size: 96px;
+  font-weight: 600;
+}
+.MainPage .Meeting .TextBlock p {
+  font-size: 32px;
+}
+.MainPage .Meeting .button {
+  background-color: white;
+  margin-top: 52px;
+  padding: 25px 0;
+  width: 425px;
+  border-radius: 50px;
+  -webkit-filter: drop-shadow(0px 0px 28px #003B5E);
+          filter: drop-shadow(0px 0px 28px #003B5E);
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.MainPage .Meeting .button p {
+  margin-left: 40px;
+  font-size: 32px;
+  color: black;
+}
+.MainPage .Meeting .button:hover {
+  background-color: #d1d1d1;
+}
+.MainPage .About {
+  position: absolute;
+  top: 100vh;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(300deg, rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);
+}
+.MainPage .About h1 {
+  margin-top: 250px;
+  color: white;
+  margin-left: 150px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.MainPage .Catalog {
+  position: absolute;
+  top: 2500px;
+  z-index: 2;
+}
+.MainPage .Catalog h1 {
+  color: white;
+  margin-left: 150px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.blockAbout {
+  position: absolute;
+  top: 900px;
+  left: 0;
+}
+
+.blockCatalog {
+  position: absolute;
+  top: 2300px;
+  left: 0;
+}
+
+.FirstAnimation {
+  -webkit-animation: 2s ease-in-out meeting;
+          animation: 2s ease-in-out meeting;
+}
+
+.none {
+  overflow: hidden;
+  display: none;
+}
+
+@-webkit-keyframes meeting {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+}
+
+@keyframes meeting {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+}
