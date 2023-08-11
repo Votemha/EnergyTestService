@@ -1,0 +1,2 @@
+# EnergyTestService
+Версия с анимацией
