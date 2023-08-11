@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ЭнергоТестСервис</title>
+	<!-- <details>
+		ЭнергоТестСервис оказывает услуги в разработке современных решений автоматизации различных технологий и производств. 
+		Осуществляем поставку средств автоматизации, контроля и метрологии.
+		Компания является официальным региональным представителем по продажам, монтажу, ремонту и пуску в эксплуатацию оборудования.
+	</details> -->
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+
+	<!-- Main content -->
+	<div class="MainPage">
+		
+		<div class="MainContent"></div>
+
+		<!-- header -->
+		<div class="header">
+
+			<div class="burger"></div>
+
+				<div class="logo"><img src="img/logo.png"></div>
+				<div class="decider"></div>
+				<div class="TextBlock">
+					<p onclick="location.href='#Meeting';">Главная</p>
+					<p onclick="location.href='#About';">О нас</p>
+					<p onclick="location.href='#Catalog';">Продукция</p>
+					<p onclick="location.href='#contact';">Поддержка</p>
+					<div onclick="location.href='#';" class="sign">
+						<p>Авторизация</p>
+					</div>
+				</div>
+		</div>
+
+		<!-- Анимация датчика -->
+		<div class="animation">
+			<img src="img/Smart-pressure-transmitter-with-indicator--Right.png">
+		</div>
+
+		<!-- Основной контент -->
+		<div class="content" id="main">
+			
+			<div class="blockMeeting" id="Meeting"></div>
+
+			<!-- ЭнергоТестСервис -->
+			<div class="Meeting" id="Meeting">
+				<div class="TextBlock">
+					<h1>ЭнергоТестСервис</h1>
+					<p>Производство современных средств измерения и автоматизации</p>	
+				</div>
+				<div class="button">
+					<p onclick="location.href='#';">ОЗНАКОМИТЬСЯ -→</p>
+				</div>
+			</div>
+
+			<div class="service">
+				<div class="BgAdapt"></div>
+				<div class="diagnostics">
+					<img src="img/diagnostics.png">
+				</div>
+				<div class="repair">
+					<img src="img/repair.png">
+				</div>
+				<div class="verification">
+					<img src="img/verification.png">
+				</div>
+				<div class="calibration">
+					<img src="img/calibration.png">
+				</div>
+				<div class="design">
+					<img src="img/design.png">
+				</div>
+			</div>
+
+
+			<!-- О нас -->
+			<div class="blockAbout" id="About-block"></div>
+			<div class="About" id="About">
+				<!-- Text -->
+				<h1>Чем мы занимаемся?</h1>
+
+				<div class="contentAbout">
+					<!-- Left group of blocks -->
+					<div class="LeftBlock">
+						<div class="TextBlock">
+							<span>ЭнергоТестСервис является Российским предприятеем-производителем современных средств измерения и автоматизации.</span>
+						</div>
+						<!-- <div class="imgBlock"></div> -->
+					</div>
+
+					<!-- <div class="buttonSlide">
+						<span>→</span>
+					</div> -->
+
+					<!-- Right group of blocks -->
+					<div class="RightBlock">
+						<div class="imgBlock"></div>
+						<div class="TextBlock">
+							<span>Компания является разработчиком и производителем собственных средств измерения.</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Каталог -->
+			<div class="blockCatalog" id="Catalog-block"></div>
+			<div class="Catalog" id="Catalog">
+				<div class="Left">
+					<div class="buttonMore"><span>Каталог→</span></div>
+					<div class="First">
+						<img src="img/4-20mA-Modbus-Output-Gauge-Pneumatic-Differential-Pressure-Transmitter-for-Water-Gas-Industrial-Measurement-PhotoRoom.png-PhotoRoom 1.png">
+						<div class="TextBlock">
+							<p>АМР-4753-10</p>
+						</div>
+					</div>
+					<div class="Third">
+						<img src="img/АМР-4753-10.png">
+						<div class="TextBlock">
+							<p>АМР-4753-10</p>
+							<span>Искрозащищенный</span>
+						</div>
+					</div>
+				</div>
+				<div class="Right">
+					<div class="Second">
+						<img src="img/АМР-4753-10-PhotoRoom 1.png">
+						<div class="TextBlock">
+							<p>АМР-4753-10</p>
+							<span>Искро-взрывобезопасный</span>
+						</div>
+					</div>
+					<div class="Fourth">
+						<img src="img/АМР-4753-10.png">
+						<div class="TextBlock">
+							<p>АМР-4753-10</p>
+							<span>Искрозащищенный</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Связаться -->
+			<div class="contact" id="contact">
+				<h1>Свяжитесь с нами</h1>
+
+				<div class="content">
+
+
+					<div class="filling">
+
+						<div class="person">
+							<div class="Name">
+								<input name="name" type="text" mozactionhint="done" placeholder="Имя" required autocomplete="on">
+							</div>
+							<div class="patronymic">
+								<input name="patronymic" type="text" mozactionhint="done" placeholder="Отчество" required autocomplete="on">
+							</div>
+							<div class="phone">
+								<input name="telephone" type="text" mozactionhint="done" autocomplete="on" placeholder="Номер телефона" pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" maxlength="11" required autocomplete="on" title="89123456789">
+							</div>
+							<div class="mailContact">
+								<input type="mail" name="mail" mozactionhint="done" placeholder="Почта" required autocomplete="on">
+							</div>
+							<div class="organizationName">
+								<input type="text" name="organizationName" mozactionhint="done" placeholder="Название организации" required autocomplete="on">
+							</div>
+						</div>
+
+
+						<div class="TextBlock">
+							<textarea type="text" placeholder="Текст"></textarea>
+						</div>
+					</div>
+
+					<div class="addContent">
+						<div class="confident">
+							<div class="checkMark">
+								<input type="checkbox" required>
+							</div>
+							<p>Ознакомлен с политикой конфеденциальности</p>
+						</div>
+
+						<div class="buttonContact">
+							<span>Отправить</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<!-- footer -->
+			<footer>
+				<p class="Main">Контактная информация</p>
+				<div class="content">
+					<div class="leftContent">
+						<p class="Name">ООО “ЭнергоТестСервис”</p>
+						<p class="Address">Адрес</p>
+						<p  class="AddressName">423815, Республика Татарстан, г.<br>Набережные Челны, ул. 40<br>ЛетПобеды, д. 61(53/39А), к. 002</p>
+					</div>
+					<div class="rightContent">
+						<p class="telephone">Номер телефона</p>
+						<a href="tel:+79375865788"><p class="phone">+7 (937) 586 57 88</p></a>
+						<p class="mail">Почта</p>
+						<a href="mailto:Etserv20@gmail.com"><p class="mailName">Etserv20@gmail.com</p></a>
+					</div>
+				</div>
+				<div class="textAdd">
+					<p>2023 © ООО ЭнергоТестСервис</p>
+				</div>
+			</footer>
+
+			<!-- Услуги -->
+			<!-- <div class="service" id="service">
+				
+				<h1>Услуги, которые мы предоставляем</h1>
+				<div class="contentService">
+					<div class="design">
+						<img src="img/design.png">
+					</div>
+					<div class="diagnostics">
+						<img src="img/diagnostics.png">
+					</div>
+					<div class="verification">
+						<img src="img/verification.png">
+					</div>
+					<div class="calibration">
+						<img src="img/calibration.png">
+					</div>
+					<div class="repair">
+						<img src="img/repair.png">
+					</div>
+				</div>
+
+			</div> -->
+
+
+		</div>
+
+	</div>
+
+
+</body>
+</html>
